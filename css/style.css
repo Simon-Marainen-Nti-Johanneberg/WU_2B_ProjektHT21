@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    width:100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Rokkitt', serif;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    height: 8vh;
+    background-color:rgba(49, 49, 49, 1);
+
+    display: grid;
+    position: fixed;
+    grid-template-columns: 1fr 30vw;
+    grid-template-areas: "log ul1";
+}
+
+#title_page{
+    height: 100vh;
+    
+    background-image: url("/img/Resturang.png") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#title{
+    display:inline-block;
+    width:fit-content;
+    color: white;
+    font-family: 'Rokkitt', serif;
+    font-size: 4rem;
+}
+ul{
+    grid-area: ul1;
+    height: inherit;
+    background-color:rgba(49, 49, 49, 1);
+
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+#logga{
+    grid-area: log;
+}
+
+#info{
+    height:40vh;
+    background-color: rgba(82, 82, 82, 1);
+
+    display:grid;
+
+}
