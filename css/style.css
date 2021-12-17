@@ -3,6 +3,7 @@
     width:100%;
     margin: 0;
     padding: 0;
+    color: white;
 
     font-family: 'Rokkitt', serif;
 }
@@ -53,6 +54,12 @@ ul{
 
 }
 
+ul#links li a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
 #logga{
     grid-area: log;
 }
@@ -62,5 +69,9 @@ ul{
     background-color: rgba(82, 82, 82, 1);
 
     display:grid;
+}
 
+footer{
+    height: 15vh;
+    background-color: rgb(65, 65, 65);
 }
