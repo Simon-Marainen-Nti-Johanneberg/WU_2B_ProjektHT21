@@ -17,8 +17,11 @@ nav{
 
     display: grid;
     position: fixed;
-    grid-template-columns: 1fr 30vw;
-    grid-template-areas: "log ul1";
+    grid-template-columns:2vw 1fr 30vw;
+    grid-template-areas: "spc log ul1";
+}
+#space{
+    grid-area: spc;
 }
 
 #title_page{
@@ -40,7 +43,7 @@ nav{
     font-family: 'Rokkitt', serif;
     font-size: 4rem;
 }
-ul{
+#links{
     grid-area: ul1;
     height: inherit;
     background-color:rgba(49, 49, 49, 1);
@@ -62,6 +65,8 @@ ul#links li a
 
 #logga{
     grid-area: log;
+    width:5vw;
+    height: 7vh;
 }
 
 #info{
@@ -69,9 +74,49 @@ ul#links li a
     background-color: rgba(82, 82, 82, 1);
 
     display:grid;
+
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    list-style-type: none;
 }
+
+#welcome{
+    width: 23vw;
+    font-size: 3rem;
+}
+
+#open{
+    height: 20vh;
+    width: 20vw;
+    font-size: 3rem;
+}
+#open_times{
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+
 
 footer{
     height: 15vh;
     background-color: rgb(65, 65, 65);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#icon{
+    width: 2vw;
+    height: 3vh;
+    float: left;
+}
+#social{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 7vw;
 }
