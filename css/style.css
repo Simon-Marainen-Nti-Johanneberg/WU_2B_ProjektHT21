@@ -115,7 +115,7 @@ footer a {
     width: auto;
 }
 
-#icon{
+.icon{
     width: 2vw;
     margin: 2%;
     float: left;
@@ -164,7 +164,7 @@ footer a {
     margin-top: 7vh;
 }
 
-#meny_lista{
+.meny_lista{
     margin-top: 2vh;
 }
 
